@@ -51,7 +51,13 @@ Rails best practices.
 Configuration is in
 [config/rails_best_practices.yml](config/rails_best_practices.yml).
 
-Run from the root of the project/app:
+If the configuration file does not exist, use `-g` to create the default:
+
+```shell
+rails_best_practices -g
+```
+
+Run from the root of the project/app to analyze:
 
 ```shell
 rails_best_practices
@@ -62,6 +68,8 @@ rails_best_practices
 https://github.com/bbatsov/rubocop
 
 `rubocop` provides several different linters to enforce code style
+
+Configuration is in [.rubocopy.yml](.rubocop.yml).
 
 ### reek
 
