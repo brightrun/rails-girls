@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -46,10 +46,6 @@ group :development, :test do
   gem 'rack-mini-profiler'
   # optional for more rack-mini-profiler views
   gem 'memory_profiler'
-  # optional for more rack-mini-profiler views
-  gem 'flamegraph'
-  # optional for more rack-mini-profiler views
-  gem 'fast_stack'
   # https://github.com/flyerhzm/bullet
   gem 'bullet'
 end
@@ -69,6 +65,8 @@ group :development do
   gem 'flay', require: false
   # https://github.com/seattlerb/flog
   gem 'flog', require: false
+  # https://github.com/DamirSvrtan/fasterer
+  gem 'fasterer', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
