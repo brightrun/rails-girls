@@ -48,6 +48,8 @@ group :development, :test do
   gem 'memory_profiler'
   # https://github.com/flyerhzm/bullet
   gem 'bullet'
+  # https://jasmine.github.io, javascript testing library
+  gem 'jasmine'
 end
 
 group :development do
